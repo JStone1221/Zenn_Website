@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNaLp5LJT-qeSrgRc7CSgnedzcWH2Y1i0&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
+</head>
+<body>
+    <nav>
+        <a href= "index.html">Home</a>
+        <a href="meditation.html">Meditation</a>
+        <img src="images/logo_semi.png" alt="Center Image">
+        <a href="excersises.html">Map</a>
+        <a href="info.html">Info</a>
+    </nav>
+
+    <section class="map-section" id="map-container">
+        <p>Here is a map to search for medical professionals.</p>
+        <gmp-map center="42.0113525390625, -87.66213989257812" zoom="14", map-id="DEMO_MAP_ID"></gmp-map>
+    </section>
+    
+    <footer>
+        <p>If you are ever in a crisis call 988.</p>
+    </footer>
+</body>
+</html>

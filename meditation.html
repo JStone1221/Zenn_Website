@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Zen</title>
+</head>
+<body>
+    <nav>
+        <a href= "index.html">Home</a>
+        <a href="meditation.html">Meditation</a>
+        <img src="images/logo_semi.png" alt="Center Image">
+        <a href="excersises.html">Map</a>
+        <a href="info.html">Info</a>
+    </nav>
+
+    <section style="background-image: url('images/meditation_image.jpg');">
+        <div class="meditation-info">
+            <ul>
+                <li>Sit upright comfortably.</li>
+                <li>Gently close your eyes.</li>
+                <li>Breathe deeply.</li>
+                <li>Slowly scan your body, and notice any sensations.</li>
+                <li>Be aware of any thoughts you are having.</li>
+                <li>When your mind wanders, focus on your breath.</li>
+                <li>Gently open your eyes when you are ready.</li>
+            </ul>
+        </div>
+        <div class="meditation-aid">
+            <div class="timer">
+                <label for="timer">Timer:</label>
+                <input type="text" id="timer" placeholder="Set timer (minutes)" value="0">
+                <!-- Timer buttons -->
+                <button class="timer-button" onclick="adjustTimer(1)">+</button>
+                <button class="timer-button" onclick="adjustTimer(-1)">-</button>
+                <button class="timer-button" onclick="startTimer()">Start</button>
+                <!-- Timer display -->
+                <div id="timer-display"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>If you are ever in a crisis call 988.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
